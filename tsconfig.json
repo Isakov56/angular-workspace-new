@@ -20,6 +20,9 @@
       "route1": [
         "./dist/route1"
       ],
+      "route2": [
+        "./dist/route2"
+      ],
       "shared-layout": [
         "./dist/shared-layout"
       ]
