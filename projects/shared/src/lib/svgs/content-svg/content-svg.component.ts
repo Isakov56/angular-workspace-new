@@ -7,8 +7,8 @@ import { Component } from '@angular/core';
   templateUrl: './content-svg.component.html',
   styles: [`
     .animated {
-      width: 25rem;
-      height: 25rem;
+      width: 30rem;
+      height: 30rem;
     }
 `]
 })

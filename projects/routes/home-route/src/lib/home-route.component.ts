@@ -8,10 +8,11 @@ import { ContentSvgComponent } from 'shared';
   standalone: true,
   imports: [ContentSvgComponent],
   template: `
-  <div class="d-flex justify-content-center h-200 align-items-center">
+  <div class="container d-flex justify-content-center h-200 align-items-center">
     <app-content-svg></app-content-svg>
   </div>
   `,
+  styleUrl: './home-route.component.scss'
 })
 export class HomeRouteComponent {
 
