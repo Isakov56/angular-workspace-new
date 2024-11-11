@@ -23,6 +23,9 @@
       "route2": [
         "./dist/route2"
       ],
+      "shared": [
+        "./dist/shared"
+      ],
       "shared-layout": [
         "./dist/shared-layout"
       ]

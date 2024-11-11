@@ -10,10 +10,9 @@ export const routes: Routes = [
         path: 'table',
         loadComponent: () => import('../../projects/shared/components/table/table.component').then(c => c.TableComponent)
     },
-    
-    // { 
-    //     path: '', redirectTo: '', pathMatch: 'full'
-    // }
+    { 
+        path: '', redirectTo: '', pathMatch: 'full'
+    },
 ];
 
 export const routeConfig: RouteConfig[] = [

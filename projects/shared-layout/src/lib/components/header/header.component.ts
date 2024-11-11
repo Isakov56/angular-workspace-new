@@ -11,6 +11,8 @@ import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { CommonModule } from '@angular/common';
+import { CapitalizePipe } from 'shared';
+
 @Component({
   selector: 'lib-header',
   standalone: true,
@@ -22,7 +24,9 @@ import { CommonModule } from '@angular/common';
     DragDropModule,
     RouterModule,
     AsyncPipe,
-    CommonModule],
+    CommonModule,
+    CapitalizePipe
+  ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
