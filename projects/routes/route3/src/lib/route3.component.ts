@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { TableComponent } from '../../../../shared/src/lib/components/table/table.component';
 
 @Component({
-  selector: 'lib-route2',
+  selector: 'lib-route3',
   standalone: true,
   imports: [TableComponent],
   template: `
@@ -10,6 +10,6 @@ import { TableComponent } from '../../../../shared/src/lib/components/table/tabl
   `,
   styles: ``
 })
-export class Route2Component {
+export class Route3Component {
 
 }

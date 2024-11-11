@@ -23,6 +23,9 @@
       "route2": [
         "./dist/route2"
       ],
+      "route3": [
+        "./dist/route3"
+      ],
       "shared": [
         "./dist/shared"
       ],
