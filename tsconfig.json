@@ -17,6 +17,9 @@
     "experimentalDecorators": true,
     "moduleResolution": "bundler",
     "paths": {
+      "home-route": [
+        "./dist/home-route"
+      ],
       "route1": [
         "./dist/route1"
       ],

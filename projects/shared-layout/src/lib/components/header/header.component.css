@@ -37,6 +37,10 @@
     height: 100%;
   }
   
+  .boundaryContainer{
+    margin-top: 1rem;
+    min-height: 88vh;
+  }
   
 
   

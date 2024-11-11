@@ -22,7 +22,7 @@ import { RouterModule } from '@angular/router';
   <div class="m-5">
     <app-dashboard></app-dashboard>
     <app-form></app-form>
-    <mat-divider></mat-divider>
+    <mat-divider class="mt-5"></mat-divider>
     <section class="d-flex align-items-center my-2 justify-content-end">
       <div class="example-button-row">
         <button mat-raised-button class="me-2" routerLink="route3">Basic table 2</button>

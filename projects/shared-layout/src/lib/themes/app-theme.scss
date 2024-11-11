@@ -14,7 +14,8 @@ html {
   $bg-color: mat.get-theme-color($theme,
     if(mat.get-theme-type($theme) == dark, surface-container-high, surface-container));
 
-    --navbar-background-color: #{if(mat.get-theme-type($theme) == dark, rgb(7, 13, 85) , rgb(197, 228, 255))};
+    --navbar-background-color: #{if(mat.get-theme-type($theme) == dark, rgb(5, 10, 56) , rgb(197, 228, 255))};
+    --navbar-background-color: #{if(mat.get-theme-type($theme) == dark, rgb(5, 10, 56) , rgb(197, 228, 255))};
     --toggle-button-bg-color: #{if(mat.get-theme-type($theme)== dark, white, black)};
     --toggle-button-color: #{if(mat.get-theme-type($theme)== dark, black, white)};
   --body-background-color: #{$bg-color};
