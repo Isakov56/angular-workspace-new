@@ -1,14 +1,14 @@
 import { Routes } from '@angular/router';
-import { RouteConfig } from '../../models/models';
+import { RouteConfig } from '../../projects/shared/src/lib/models/models';
 
 export const routes: Routes = [
     {
         path: 'dashboard',
-        loadComponent: () => import('../../projects/shared/components/dashboard/dashboard.component').then(c => c.DashboardComponent)
+        loadComponent: () => import('../../projects/shared/src/lib/components/dashboard/dashboard.component').then(c => c.DashboardComponent)
     },
     {
         path: 'table',
-        loadComponent: () => import('../../projects/shared/components/table/table.component').then(c => c.TableComponent)
+        loadComponent: () => import('../../projects/shared/src/lib/components/table/table.component').then(c => c.TableComponent)
     },
     { 
         path: '', redirectTo: '', pathMatch: 'full'
