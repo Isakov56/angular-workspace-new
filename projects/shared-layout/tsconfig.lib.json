@@ -9,6 +9,10 @@
     "inlineSources": true,
     "types": []
   },
+  "include": [
+    "src/**/*.ts",
+    "src/lib/themes/**/*.ts" // Add this line
+  ],
   "exclude": [
     "**/*.spec.ts"
   ]

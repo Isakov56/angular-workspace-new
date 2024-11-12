@@ -4,9 +4,9 @@
         [mode]="(isHandset$ | async) ? 'over' : 'side'"
         [opened]="drawer.opened">
       <mat-toolbar >Menu</mat-toolbar>
-      <mat-nav-list *ngFor="let route of routes" class="py-1">
-        <a mat-list-item  *ngIf="route.path" [routerLink]="route.path">{{ route.path ? (route.path | capitalize) : '' }}</a>
-      </mat-nav-list>
+      <!-- <mat-nav-list *ngFor="let route of routes" class="py-1">
+        <a mat-list-item  *ngIf="route.path" [routerLink]="route.path">{{ route.path ? (route.path) : '' }}</a>
+      </mat-nav-list> -->
     </mat-sidenav>
         <mat-sidenav-content class=" hieght">
             <div #boundaryContainer class="boundaryContainer">

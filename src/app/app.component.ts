@@ -13,7 +13,7 @@ import { routes, routeConfig } from './app.routes';
 })
 export class AppComponent {
   title = 'angular-workspace-new';
-  public routes = routes;
+  public routes = routeConfig;
   // routes = [
   //   { path: 'dashboard', label: 'Dashboard' },
   //   { path: 'table', label: 'Table' },

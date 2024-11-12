@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { RouteConfig } from '../../projects/shared/src/lib/models/models';
+import { RouteConfig } from 'shared';
 
 export const routes: Routes = [
     {

@@ -11,7 +11,9 @@ import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { CommonModule } from '@angular/common';
-import { CapitalizePipe } from 'shared';
+// import { RouteConfig } from 'shared';
+
+// import { CapitalizePipe } from 'shared';
 
 @Component({
   selector: 'lib-header',
@@ -25,7 +27,7 @@ import { CapitalizePipe } from 'shared';
     RouterModule,
     AsyncPipe,
     CommonModule,
-    CapitalizePipe
+    // CapitalizePipe
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
@@ -33,10 +35,11 @@ import { CapitalizePipe } from 'shared';
 export class HeaderComponent implements OnInit {
   private breakpointObserver = inject(BreakpointObserver);
 
-  @Input() routes: Routes = [];
+  // @Input() routes: RouteConfig = [];
 
   ngOnInit() {
-    console.log('HeaderComponent initialized with routes:', this.routes);
+    // console.log('HeaderComponent initialized with routes:', this.routes);
+    document.body.classList.add('theme-light');
   }
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
@@ -79,7 +82,8 @@ export class HeaderComponent implements OnInit {
 
     if (this.isDarkTheme) {
       document.body.classList.add('theme-dark');
-    } else {
+    }
+    else {
       document.body.classList.remove('theme-dark');
     }
   }
