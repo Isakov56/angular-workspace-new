@@ -20,6 +20,9 @@
       "home-route": [
         "./dist/home-route"
       ],
+      "isakov-core": [
+        "./dist/isakov-core"
+      ],
       "route1": [
         "./dist/route1"
       ],

@@ -11,7 +11,7 @@ import { Observable } from 'rxjs';
 import { map, shareReplay } from 'rxjs/operators';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { CommonModule } from '@angular/common';
-// import { RouteConfig } from 'shared';
+import { RouteConfig } from 'shared';
 
 // import { CapitalizePipe } from 'shared';
 
@@ -35,11 +35,12 @@ import { CommonModule } from '@angular/common';
 export class HeaderComponent implements OnInit {
   private breakpointObserver = inject(BreakpointObserver);
 
-  // @Input() routes: RouteConfig = [];
+  @Input() routes: RouteConfig[] = []
 
   ngOnInit() {
     // console.log('HeaderComponent initialized with routes:', this.routes);
     document.body.classList.add('theme-light');
+    console.log('sjla;sdkfj;alskdfj;l')
   }
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
