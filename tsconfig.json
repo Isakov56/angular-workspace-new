@@ -20,6 +20,9 @@
       "home-route": [
         "./dist/home-route"
       ],
+      "i18n-lib": [
+        "./dist/i18n-lib"
+      ],
       "isakov-core": [
         "./dist/isakov-core"
       ],

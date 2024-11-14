@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { SharedLayoutComponent } from 'shared-layout';
 import { routes, routeConfig } from './app.routes';
 
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
