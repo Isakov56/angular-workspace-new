@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
-@use '../projects/shared-layout/src/lib/themes/custome-theme.scss' as *;
+// @use '../projects/shared-layout/src/lib/themes/custome-theme.scss' as *;
+@use '../projects/themes-lib/themes.scss';
 body{
     margin: 0;
     height: 100vh;
@@ -7,3 +8,5 @@ body{
 }
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+

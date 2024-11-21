@@ -1,0 +1,36 @@
+@use 'sass:map';
+@use '@angular/material' as mat;
+
+html {
+  --body-font-family: 'Roboto', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial,
+    'Lucida Grande', sans-serif;
+  --code-font-family: 'Roboto Mono', monospace;
+  --gutter: 1rem;
+  --sidenav-width: 15rem;
+  --sidenav-collapsed-width: 4rem;
+}
+
+@mixin theme($theme) {
+  $bg-color: mat.get-theme-color($theme,
+    if(mat.get-theme-type($theme) == dark, surface-container-high, surface-container));
+
+    --navbar-background-color: #{if(mat.get-theme-type($theme) == dark, rgb(5, 10, 56) , rgb(197, 228, 255))};
+    --navbar-background-color: #{if(mat.get-theme-type($theme) == dark, rgb(5, 10, 56) , rgb(197, 228, 255))};
+    --toggle-button-bg-color: #{if(mat.get-theme-type($theme)== dark, white, black)};
+    --toggle-button-color: #{if(mat.get-theme-type($theme)== dark, black, white)};
+    --body-background-color: #{$bg-color};
+    --side-background-color: #{if(mat.get-theme-type($theme) == dark, rgb(5, 10, 56) , rgb(223, 243, 241))};
+    --primary-button: #{if(mat.get-theme-type($theme) == dark, rgb(255, 255, 255) , rgb(24, 49, 114))};
+    --primary-button-dark: #{if(mat.get-theme-type($theme) == dark, rgb(5, 10, 56) , rgb(24, 49, 114))};
+    --primary-background-color: #{if(mat.get-theme-type($theme) == dark, rgb(16, 20, 20) , rgb(235, 235, 239))};
+    --primary-button-hover: #{if(mat.get-theme-type($theme) == dark, rgb(63, 73, 72) , rgb(129, 199, 233))};
+    --secondary-background: #{if(mat.get-theme-type($theme) == dark, rgb(63, 73, 72) , rgba(24, 49, 114, 0.2))};
+
+//   --topmenu-item-active-background-color: #{mat.get-theme-color($theme, primary-container)};
+//   --topmenu-dropdown-item-active-text-color: #{mat.get-theme-color($theme, primary)};
+//   --toast-info-background-color: #{map.get(mat.$azure-palette,
+//     if(mat.get-theme-type($theme) == dark, 30, 50))};
+//   --toast-success-background-color: #{map.get(mat.$green-palette,
+//     if(mat.get-theme-type($theme) == dark, 40, 60))};
+
+}

@@ -40,6 +40,9 @@
       ],
       "shared-layout": [
         "./dist/shared-layout"
+      ],
+      "themes-lib": [
+        "./dist/themes-lib"
       ]
     },
     "importHelpers": true,
